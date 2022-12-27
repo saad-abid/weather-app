@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+body {
+  background: url("../img/clear.jpg") center center / cover no-repeat;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+}
+section {
+  display: block;
+}
+.sidebar {
+  background-color: transparent;
+  width: 40vw;
+  height: 100vh;
+  max-width: 400px;
+  position: absolute;
+  right: 0;
+  backdrop-filter: blur(10px);
+  top: 0;
+  padding: 0 50px;
+  color: silver;
+}
+.sidebar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1a1a1a;
+  width: 100%;
+  height: 100%;
+  opacity: 0.45;
+  z-index: -1;
+}
+.sidebar .spacer {
+  width: 100%;
+  margin: 20px auto;
+  height: 0.1px;
+  background: silver;
+}
+
+.sidebar ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.white {
+  color: white;
+}
+input::placeholder {
+  color: silver;
+}
+form input {
+  text-align: center;
+  width: 65%;
+  color: silver;
+  background: none;
+  outline: none;
+  border: 0;
+  border-bottom: 1px dotted silver;
+  font-size: 20px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+form button {
+  margin-left: 40px;
+  color: rgb(192, 192, 192);
+  background: none;
+  outline: none;
+  border: 0;
+  font-size: 18px;
+  transition: 0.5s;
+}
+form button:hover {
+  cursor: pointer;
+  font-size: 19px;
+}
+.status-list li:hover {
+  transition: 0.5s;
+  color: white;
+}
+.sidebar .status-list .country {
+  color: #87ceeb;
+  padding: 3px;
+  border: 1px solid #fff;
+}
+.weatherDetail {
+  margin: 30px auto;
+}
+/* LEFT DATA */
+
+.left-info {
+  /* margin: 450px 0 0 150px;
+  display: flex; */
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 5rem;
+  margin-left: 4rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px #999;
+  justify-content: center;
+  align-items: center;
+}
+.left-info h1 {
+  font-size: 7rem;
+  font-weight: 600;
+}
+.left-info .location-info {
+  text-align: center;
+  padding: 0 15px;
+}
+.left-info .location-info h3 {
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+
+.left-info .location-info p {
+  font-size: 1.3rem;
+}
+.left-info .weather-status {
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+.left-info .weather-status p {
+  font-size: 3rem;
+}
+.Time {
+  text-align: center;
+  color: silver;
+  font-size: 30px;
+  margin: 50px auto;
+  padding: 10px;
+}
